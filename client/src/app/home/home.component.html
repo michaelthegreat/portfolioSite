@@ -1,20 +1,26 @@
-<mat-toolbar color="primary">
-  <span><!--
-      <a [routerLink]="['/']">
-          <img src="assets/images/site-logo-light.png"
-          [ngClass]="{'toolbar-logo': !isScreenSmall, 'toolbar-logo-small': isScreenSmall }" >
-      </a>-->
-  </span>
-  <span class="toolbar-fill-space"></span>
 
-</mat-toolbar>
-<div class="app-container ">
+
+    <mat-card class="card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+
+        </mat-card-header>
+        <img mat-card-image src="/assets/images/trumpEndorsement.png" alt="Quintero applications really are great. They're the best!">
+        <mat-card-content>
+          <p>
+            We are a Florida based software company that specializes in building full stack web applications for small businesses. If you would like us to create a web application for you, please contact us on the phone at 786 445 2187. 
+          </p>
+        </mat-card-content><!--
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>-->
+        <h2>Our Clients</h2>
+        <mat-card *ngFor="let portfolioItem of portfolioItems">
+          <p>{{portfolioItem.title}}</p>
+        </mat-card>
+      </mat-card>
+
   <router-outlet></router-outlet>
-</div>
 
-<div class="footer">
-  <p>
-          &copy; Quintero Applications Limited Liability Company 2018
-  </p>
-     
-</div>
+
