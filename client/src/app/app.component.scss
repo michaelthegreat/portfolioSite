@@ -14,7 +14,11 @@
 
 .logo-text {
     color:white;
-    text-decoration:none
+    text-decoration:none;
+    display:none;
+}
+.active {
+    display:initial !important;
 }
 .toolbar-logo-small{
     width: 13em;
@@ -23,3 +27,4 @@
 .footer {
     text-align:center;
 }
+

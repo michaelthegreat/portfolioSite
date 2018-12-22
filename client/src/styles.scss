@@ -20,9 +20,11 @@ $candy-app-theme: mat-light-theme($candy-app-primary,$candy-app-secondary, $cand
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
+$background-color: #F4F4E6;
 body {
     margin:0;
     font-family: "Lato", sans-serif;
+    background-color:$background-color;
 }
 
 @font-face { font-family: "Lato"; src: url("./assets/fonts/lato-regular.woff2"); }

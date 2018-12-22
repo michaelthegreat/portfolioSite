@@ -1,12 +1,14 @@
-<mat-toolbar color="primary" class="toolbar">
-  <span>
-      <a class="logo-text" [routerLink]="['/']">
-        Quintero Applications LLC
-      </a>
-  </span>
-  <span class="toolbar-fill-space"></span>
 
-</mat-toolbar>
+<mat-toolbar color="primary" class="toolbar">
+    <span>
+        <a class="logo-text" [routerLink]="['/']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:
+          true}">Quintero Applications</a>
+        <a class="logo-text" [routerLink]="['/resume']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:
+          true}">Michael Quintero's Resume Site</a>
+    </span>
+    <span class="toolbar-fill-space"></span>
+  
+  </mat-toolbar>      
 <div class="app-container ">
   <router-outlet></router-outlet>
 </div>
