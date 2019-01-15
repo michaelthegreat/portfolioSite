@@ -1,0 +1,19 @@
+.toolbar{
+    z-index:101;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.toolbar-fill-space{
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+.toolbar  a{
+    color:white;
+    text-decoration:none;
+    margin-right:1em;
+    //display:none;
+}
+.toolbar-logo{
+    height:100%;
+}

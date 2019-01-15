@@ -1,0 +1,46 @@
+.toolbar-fill-space{
+    flex: 1 1 auto;
+}
+
+.logo-text {
+    color:white;
+    text-decoration:none;
+
+}
+.active {
+    display:initial !important;
+}
+.main-content{
+    max-width:10in;
+    text-align:center;
+}
+
+.outer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+
+.material-icons {
+    font-size: 2.02em !important;
+}
+
+.about-block-body{
+    font-size:1.06em;
+}
+$portfolio-item-head-background-color : #666666;
+$portfolio-card-background-color: #efefef;
+.portfolio-item-card{
+    max-width:6in;
+    margin:auto;
+    z-index:101;
+
+}
+.portfolio-item-header{
+
+}
+
+.work-experience-item-logo {
+    height: 1em;
+}

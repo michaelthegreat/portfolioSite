@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+$candy-app-primary: mat-palette($mat-grey,900,50,500);
+$candy-app-secondary:  mat-palette($mat-amber,800,100,400);
+
+// The warn palette is optionalv (defaults to red).
+$candy-app-warn:    mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$candy-app-theme: mat-light-theme($candy-app-primary,$candy-app-secondary, $candy-app-warn);
+
+@include angular-material-theme($candy-app-theme);
+html, body { height: 100%; }
+/*body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }*/
+body {
+    margin:0;
+    font-family: "Lato", sans-serif;
+}
+
+@font-face { font-family: "Lato"; src: url("./assets/fonts/lato-regular.woff2"); }
+
+.footer {
+    text-align:center;
+}
+
+
+.particles-js-canvas-el{
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+    z-index: -1;    
+}

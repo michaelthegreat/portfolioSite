@@ -1,0 +1,49 @@
+.main-content{
+    max-width:10in;
+    text-align:center;
+
+}
+
+.outer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+
+.logo-image{
+    z-index:-101;
+}
+
+.footer {
+    margin-bottom:auto;
+}
+
+
+
+/*TODO IDEA: port this box with a background stuff into a utility folder or its own module or something */
+/*box with a background 
+.box { 
+    float:left;
+    width:292px;
+    height:141px;
+}
+
+.box-background-container{
+    position: relative;
+    top: -18px;
+}
+
+.box-background{
+    display: block;
+    z-index: 3;
+}
+
+.box-foreground{
+    display: block;
+    z-index: 5;
+    position: relative;
+}
+
+
+end box with a background */
