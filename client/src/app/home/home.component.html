@@ -1,0 +1,33 @@
+    <mat-card class="main-card">
+
+        <img mat-card-image src="/assets/images/trumpEndorsement.png" alt="Quintero applications really are great. They're the best!">
+        <mat-card-content>
+          <p>
+            We are a Florida based software company that specializes in building full stack web applications for small businesses. If you would like us to create a web application for you, please email us at <a href="mailto:quinteroapplications@quinteroapplications.com">quinteroapplications@quinteroapplications.com</a> 
+          </p>
+        </mat-card-content><!--
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>-->
+        <h2 style="text-align:center;">Applications We've Built</h2>
+        <mat-card class="portfolio-item-card" *ngFor="let portfolioItem of portfolioItems">
+            <mat-card-header class="portfolio-item-header">
+                <mat-card-title><h4>{{portfolioItem.title}}</h4></mat-card-title>
+              </mat-card-header>
+              <img mat-card-image src="{{portfolioItem.image}}" alt="Demo of {{portfolioItem.title}}">
+
+          <mat-card-content>
+            
+              {{portfolioItem.description}}
+          </mat-card-content>
+          <mat-card-actions>
+              <a href="{{portfolioItem.url}}" target="_blank"><button mat-button>Visit Site</button></a>
+
+            </mat-card-actions>
+        </mat-card>
+      </mat-card>
+
+  <router-outlet></router-outlet>
+
+

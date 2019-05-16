@@ -1,0 +1,30 @@
+.app-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toolbar-fill-space{
+    flex: 1 1 auto;
+}
+
+.toolbar-logo{
+    width: 17em;
+    height: auto;
+}
+
+.logo-text {
+    color:white;
+    text-decoration:none;
+    display:none;
+}
+.active {
+    display:initial !important;
+}
+.toolbar-logo-small{
+    width: 13em;
+    height: auto;
+}
+.footer {
+    text-align:center;
+}
+

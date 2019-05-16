@@ -1,0 +1,48 @@
+
+
+    <mat-card class="main-card">
+        <mat-card-content>
+          <p>
+            I am an experienced, Florida based software developer that specializes in building full stack web applications. I am currently seeking a full time position. If you would like to contact me please send me an email at <a href="mailto:michaelq.quintero@gmail.com">michaelq.quintero@gmail.com</a> 
+          </p>
+        </mat-card-content>
+        <h2 style="text-align:center;">Public Facing Applications I've built</h2>
+
+        <mat-card class="portfolio-item-card" *ngFor="let portfolioItem of portfolioItems">
+            <mat-card-header class="portfolio-item-header">
+                <mat-card-title><h4>{{portfolioItem.title}}</h4></mat-card-title>
+              </mat-card-header>
+              <img mat-card-image src="{{portfolioItem.image}}" alt="Demo of Leadershipspectrum.com">
+  
+          <mat-card-content>
+            
+              {{portfolioItem.description}}
+          </mat-card-content>
+          <mat-card-actions>
+              <a href="{{portfolioItem.url}}" target="_blank"><button mat-button>Visit Site</button></a>
+  
+            </mat-card-actions>
+        </mat-card>
+
+        <h2 style="text-align:center;">Work Experience</h2>
+        <mat-card class="portfolio-item-card" *ngFor="let workExperienceItem of workExperienceItems">
+          
+          <mat-card-header class="portfolio-item-header">
+            <mat-card-title>
+                <h4>{{workExperienceItem.companyName}} <p>{{workExperienceItem.position}}</p></h4>
+                
+            </mat-card-title>
+            <!--<img class="work-experience-item-logo" src="{{workExperienceItem.image}}" alt="{{workExperienceItem.companyName}} logo">
+            -->
+            </mat-card-header>
+          <mat-card-content>
+            <p>
+                {{workExperienceItem.description}}
+            </p>
+            <p>Skills: <span *ngFor="let li of workExperienceItem.skills"> {{li}},</span></p>
+        </mat-card-content>
+        </mat-card>
+      </mat-card>
+  <router-outlet></router-outlet>
+
+
