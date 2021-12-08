@@ -17,9 +17,6 @@ const environmentVariablesFile = `export const environmentVariables = {
      *   Do not modify it manually
      */
     API_URL: '${process.env.API_URL || ''}',
-    SQUARE_ACCESS_TOKEN: '${process.env.SQUARE_ACCESS_TOKEN || ''}',
-    SQUARE_APP_ID: '${process.env.SQUARE_APP_ID || ''}',
-    SQUARE_LOCATION_ID: '${process.env.SQUARE_LOCATION_ID || ''}'
 }`;
 
 fs.outputFile(targetPath, environmentVariablesFile, function (err) {
