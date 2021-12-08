@@ -1,0 +1,40 @@
+<div class="contact-page">
+    <mat-card class="contact-page__mat-card">
+      <mat-card-content>
+        <div class="contact-page__form-container" [formGroup]="contactForm">
+          <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input formControlName="name" matInput />
+            <mat-error *ngIf="isErrorShown('name')">Name is required</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input formControlName="email" matInput />
+            <mat-error *ngIf="isErrorShown('email')">Please enter a valid email</mat-error>
+          </mat-form-field>
+          <mat-form-field hintLabel="Max 1024 characters " appearance="fill">
+            <mat-label>Message</mat-label>
+            <textarea formControlName="message" matInput></textarea>
+            <mat-hint align="end">  {{ contactForm.getRawValue().message?.length || 0}}/1024</mat-hint>
+            <mat-error *ngIf="isErrorShown('email')">Message is required</mat-error>
+          </mat-form-field>
+          <re-captcha
+            (resolved)="resolved($event)"
+            siteKey="6LcOuyYTAAAAAHTjFuqhA52fmfJ_j5iFk5PsfXaU"
+          ></re-captcha>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button
+          mat-flat-button
+          color="primary"
+          type="submit"
+          aria-label="Submit Contact Request"
+          (click)="submit()"
+        >
+          Submit
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  

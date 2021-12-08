@@ -1,0 +1,14 @@
+<mat-toolbar class="header__toolbar" color="primary">
+    <button mat-icon-button class="example-icon" [routerLink]="''" aria-label="Home">
+        <mat-icon>home</mat-icon>
+      </button>
+      <span>Michael Quintero's Resume</span>
+      <span class="header__toolbar-spacer"></span>
+  <div class="header__menu" mat-tab-nav-bar>
+    <ng-container *ngFor="let link of navLinks">
+      <a mat-button id="header-link_{{ link.path }}" [routerLink]="link.path">{{
+        link.label
+      }}</a>
+    </ng-container>
+  </div>
+</mat-toolbar>

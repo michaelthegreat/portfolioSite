@@ -1,0 +1,49 @@
+<div class="perform-request-modal">
+  <div *ngIf="(data?.requestState$ | async) == REQUEST_STATE.REQUEST_STARTED">
+    <h1
+      mat-dialog-title
+      color="primary"
+      class="perform-request-modal__dialog-title"
+    >
+      {{ data?.messageConfig?.load?.header }}
+    </h1>
+    <div mat-dialog-content class="perform-request-modal__dialog-content">
+      <p *ngIf="data?.messageConfig?.load?.body">
+        {{ data?.messageConfig?.load?.body }}
+      </p>
+      <mat-spinner></mat-spinner>
+    </div>
+  </div>
+
+  <div *ngIf="(data?.requestState$ | async) == REQUEST_STATE.REQUEST_COMPLETED">
+    <h1
+      mat-dialog-title
+      color="primary"
+      class="perform-request-modal__dialog-title"
+    >
+      {{ data?.messageConfig?.resolved?.header }}
+    </h1>
+    <div mat-dialog-content class="perform-request-modal__dialog-content">
+      {{ data?.messageConfig?.resolved?.body }}
+    </div>
+    <div mat-dialog-actions class="perform-request-modal__dialog-actions">
+      <button mat-flat-button color="primary" [mat-dialog-close]="true" cdkFocusInitial>
+        {{ data?.messageConfig?.resolved?.confirm }}
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="(data?.requestState$ | async) == REQUEST_STATE.ERROR">
+    <h1 mat-dialog-title class="perform-request-modal__dialog-title">
+      {{ data?.messageConfig?.rejected?.header }}
+    </h1>
+    <div mat-dialog-content class="perform-request-modal__dialog-content">
+      {{ data?.messageConfig?.rejected?.header }}
+    </div>
+    <div mat-dialog-actions class="perform-request-modal__dialog-actions">
+      <button mat-flat-button color="warning" [mat-dialog-close]="false" cdkFocusInitial>
+        {{ data?.messageConfig?.rejected?.cancel }}
+      </button>
+    </div>
+  </div>
+</div>

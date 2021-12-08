@@ -1,0 +1,15 @@
+.perform-request-modal {
+  &__dialog-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__dialog-title {
+    display: flex;
+    justify-content: center;
+  }
+  &__dialog-actions {
+    display: flex;
+    justify-content: center;
+  }
+}

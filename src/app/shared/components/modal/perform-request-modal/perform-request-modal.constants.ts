@@ -1,0 +1,8 @@
+export const GRAPHQL_ERROR_NOTIFICATION = 'GraphQL error: ';
+export enum REQUEST_STATE {
+    NO_REQUEST_INITIATED = 0,
+    REQUEST_STARTED = 1,
+    REQUEST_COMPLETED = 2,
+    ERROR=3
+  };
+  

@@ -1,0 +1,43 @@
+<p>
+  I am an experienced, Florida based software developer that specializes in
+  building full stack web applications. I am currently seeking a full time
+  position.
+</p>
+<h2>Work Experience</h2>
+
+<mat-card *ngFor="let workExperienceItem of workItems" class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{workExperienceItem.companyName}} <p>{{workExperienceItem.position}}</p></mat-card-title>
+    </mat-card-header>
+    <!-- <img
+      mat-card-image
+      src="{{ workExperienceItem.image }}"
+      alt="Demo of Leadershipspectrum.com"
+    /> -->
+    <mat-card-content>
+      <p>
+          {{workExperienceItem.description}}
+      </p>
+      <p>Skills: <span *ngFor="let li of workExperienceItem.skills"> {{li}},</span></p>
+    </mat-card-content>
+  </mat-card>
+  <h2>Gallery of stuff I worked on</h2>
+
+<mat-card *ngFor="let portfolioItem of portfolioItems" class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{ portfolioItem.title }}</mat-card-title>
+    </mat-card-header>
+    <img
+      mat-card-image
+      src="{{ portfolioItem.image }}"
+      alt="Demo of Leadershipspectrum.com"
+    />
+    <mat-card-content>
+      <p>
+        {{ portfolioItem.description }}
+      </p>
+    </mat-card-content>
+  </mat-card>
+  
+
+
