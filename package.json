@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --ssl=true --port=4204",
-    "build": "ng build",
+    "build": "ng build --base-href='./'",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "set-env-var": "node -r dotenv/config devtools/set-environment-variables.js"
