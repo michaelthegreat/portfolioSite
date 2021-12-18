@@ -7,12 +7,8 @@ import { environmentVariables } from '../app/config/environment-variables';
 export const environment = {
   production: false,
   endpoints: {
-    apiUrl: environmentVariables.API_URL
-  },
-  squarePayments: {
-    appId: environmentVariables.SQUARE_APP_ID,
-    locationId: environmentVariables.SQUARE_LOCATION_ID,
-    accessToken: environmentVariables.SQUARE_ACCESS_TOKEN
+    apiUrl: environmentVariables.API_URL,
+    imageHost: environmentVariables.IMAGE_HOST
   }
 };
 

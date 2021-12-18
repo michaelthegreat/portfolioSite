@@ -2,7 +2,6 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '~@angular/material' as mat;
-// @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
 // Plus imports for other components in your app.
 
@@ -11,8 +10,7 @@
 // Be sure that you only ever include this mixin once!
 @include mat.core();
 
-// $my-palette: mat.$purple-palette;
-$my-palette: mat.$purple-palette;
+$my-palette: mat.$indigo-palette;
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 

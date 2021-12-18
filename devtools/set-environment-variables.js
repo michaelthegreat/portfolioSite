@@ -17,6 +17,7 @@ const environmentVariablesFile = `export const environmentVariables = {
      *   Do not modify it manually
      */
     API_URL: '${process.env.API_URL || ''}',
+    IMAGE_HOST: '${process.env.IMAGE_HOST || ''}'
 }`;
 
 fs.outputFile(targetPath, environmentVariablesFile, function (err) {
