@@ -25,7 +25,8 @@ export const WorkExperienceItems: IWorkExperienceItem[] = [
       "Unit tests (jasmine, jest)",
       "Microsoft Azure Cloud",
       "Python",
-      "signavio (SAP)",
+      "Signavio (SAP)",
+      "Datadog (cloud monitoring)"
     ],
   },
   {
@@ -126,14 +127,16 @@ export const PortfolioItems: IPortfolioItem[] = [
     description:
       "The recording shows personalized views for data grids and an export. I worked full stack on these features.",
     url: "https://www.jabil.com/capabilities/supply-chain/procurement-services.html",
-    image: `${environment.endpoints.imageHost}QN2.gif`,
+    image: `${environment.endpoints.imageHost}QN3.gif`,
+    skills: ["Angular", "ag grid", "DynamoDb", "javascript / typescript", "AWS Lambda"]
   },
   {
     title: "Searchable Data grid UI with column filters and export",
     description:
       "The recording shows a searchable data grid with column filters and an export.  This app supported data exports up to 1 million records (which is the maximum file size for CSV files)",
     url: "https://www.jabil.com/capabilities/supply-chain/procurement-services.html",
-    image: `${environment.endpoints.imageHost}PIP.gif`,
+    skills: ["Angular", "ag grid", "PostgreSQL", "javascript / typescript",  "AWS Lambda"],
+    image: `${environment.endpoints.imageHost}PIP2.gif`,
   },
   {
     title: "SkyMassage",
@@ -141,6 +144,7 @@ export const PortfolioItems: IPortfolioItem[] = [
       "A website made for a Miami based massage company that allows customers to order a massage online. It sends a text to the masseuse and an email to the customer with the order details.",
     url: "http://skymassage.org",
     image: `${environment.endpoints.imageHost}skymassage.gif`,
+    skills: ["Angular","DynamoDb", "javascript / typescript", "AWS Simple Email Service"]
   },
   {
     title: "Baby Drum",
@@ -148,6 +152,8 @@ export const PortfolioItems: IPortfolioItem[] = [
       "A very simple app for babies to play the drums on. It has no ads and no extra screens or configurations for babies to get lost in. ",
     url: "https://play.google.com/store/apps/details?id=com.QuinteroLLC.babyDrum",
     image: `${environment.endpoints.imageHost}babyDrum.gif`,
+    skills: ["C#","Microsoft Visual Studio", "Unity"]
+    
   },
   {
     title: "Leadership Spectrum",
@@ -155,6 +161,8 @@ export const PortfolioItems: IPortfolioItem[] = [
       "A web app made for a business management consulting firm. Customers pay the company for training and buy logins for their employees to use on the site. The site contains a psychological exam which is meant to help them evaluate their management mindset in a business. The results of the exam are customized to the participant's answers and returned to them in a beautifully formatted pdf.",
     url: "http://www.leadershipspectrum.com/",
     image: `${environment.endpoints.imageHost}leadershipspectrum.gif`,
+    skills: ["Perl","PhP", "MySQL", "HTML / CSS"]
+    
   },
   {
     title: "Lucky Fish",
@@ -162,5 +170,6 @@ export const PortfolioItems: IPortfolioItem[] = [
       "A fun, challenging game involving a flying goldfish and rockets",
     url: "https://play.google.com/store/apps/details?id=com.people.ME",
     image: `${environment.endpoints.imageHost}luckyFish.gif`,
+    skills: ["C#","Microsoft Visual Studio", "Unity"]
   },
 ]

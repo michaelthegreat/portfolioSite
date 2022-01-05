@@ -36,6 +36,7 @@
       <p>
         {{ portfolioItem.description }}
       </p>
+      <p>Skills: <span *ngFor="let li of portfolioItem.skills"> {{li}},</span></p>
     </mat-card-content>
   </mat-card>
   

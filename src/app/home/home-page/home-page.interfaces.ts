@@ -13,4 +13,5 @@ export interface IWorkExperienceItem {
     description: string;
     image:string;
     url: string;
+    skills: string[];
   }
