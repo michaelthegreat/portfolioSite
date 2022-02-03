@@ -136,7 +136,7 @@ export const PortfolioItems: IPortfolioItem[] = [
       "The recording shows a searchable data grid with column filters and an export.  This app supported data exports up to 1 million records (which is the maximum file size for CSV files)",
     url: "https://www.jabil.com/capabilities/supply-chain/procurement-services.html",
     skills: ["Angular", "ag grid", "PostgreSQL", "javascript / typescript",  "AWS Lambda"],
-    image: `${environment.endpoints.imageHost}PIP2.gif`,
+    image: `${environment.endpoints.imageHost}PIP3.gif`,
   },
   {
     title: "SkyMassage",
