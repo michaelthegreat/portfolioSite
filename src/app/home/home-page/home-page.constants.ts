@@ -7,9 +7,9 @@ export const WorkExperienceItems: IWorkExperienceItem[] = [
     position: "Programming Analyst",
     description: `Worked on the Digital Transformation Services team at Jabil, a contract manufacturing company. Developed for and supported
            supply chain applications with various functions such as the detection of excess and obsolete inventory, a procurement search
-           platform to help supply chain managers identify part information and a quote negotiation application that would suggest
-           opportunities for increased margins based on data. Worked as a full stack developer to work on supply chain and 
-           also assist with some other projects such as a medical device, a chatbot, a light display and data reports. 
+           platform to help supply chain managers identify part and other entity information and worked on a quote negotiation application that would suggest
+           opportunities for increased margins based on data. Worked as a full stack developer  and 
+           also assisted with some other projects such as a web administration dashboard for a new medical device, an alexa chatbot that integrated with google maps, a light display that would go off whenever a shipment was posted to the database and various data reports . 
            Helped deliver the first application at the company with automatically enforced code test coverage. Also developed
            a way for users to save and personalize data grid views.
           `,
@@ -22,6 +22,8 @@ export const WorkExperienceItems: IWorkExperienceItem[] = [
       "Postgres SQL",
       "NoSQL (dynamoDb)",
       "Ag grid",
+      "highcharts",
+      "d3 charts",
       "Unit tests (jasmine, jest)",
       "Microsoft Azure Cloud",
       "Python",
@@ -33,7 +35,7 @@ export const WorkExperienceItems: IWorkExperienceItem[] = [
     companyName: "NBCUniversal Media LLC (Hays Consultant)",
     position: "Software Developer",
     description:
-      "Solved failed webstore order errors for the Universal Orlando Resort  and wrote automated tests. Worked in an agile environment doing test driven development.",
+      "Solved failed webstore order errors for the Universal Studios Orlando Resort and wrote automated tests. Worked in an agile environment doing test driven development.",
     image: `${environment.endpoints.imageHost}companyLogos/nbcu-logo.jpg`,
     dateStarted: "Aug 2018",
     dateEnded: "Oct 2018",
@@ -52,7 +54,7 @@ export const WorkExperienceItems: IWorkExperienceItem[] = [
     companyName: "Progressive Insurance",
     position: "Applications Developer",
     description:
-      "Developed internal facing web applications to help people automate business processes, manage data and collect reports. Collected requirements for applications. Communicated with users directly and provided application  support.",
+      "Developed internal facing web applications to help people automate business processes, manage data and collect reports. This required alot of learning about the home insurance industry and its business process. Collected requirements for applications. Communicated with users directly and provided application  support.",
     image: `${environment.endpoints.imageHost}companyLogos/progressive-logo.png`,
     dateStarted: "Jan 2018",
     dateEnded: "Jun 2018",
@@ -72,7 +74,7 @@ export const WorkExperienceItems: IWorkExperienceItem[] = [
     companyName: "Moffitt (Hays Consultant)",
     position: "Web Applications Developer",
     description:
-      "Developed web applications for the Research IT department of Moffitt Cancer Center. Implemented front and back end features, deployed code and performed basic support for some applications. Built dynamic  pdf forms on the web browser. Created automatic deployment procedures and test scripts. Developed web services for teams outside of my department  to access some of our logic and data.",
+      "Developed web applications for the Research IT department of Moffitt Cancer Center such as a HIPAA compliant electronic form collection app with e-signature support, a geriatric research utility that had an interesting sparse data schema which was studied and compared to other sparse data schemas in my masters thesis and a web portal for collecting information on a smoking and vaping study. Implemented front and back end features, deployed code and performed basic support for some applications. Built dynamic  pdf forms on the web browser. Created automatic deployment procedures and test scripts. Developed web services for teams outside of my department  to access some of our logic and data.",
     image: `${environment.endpoints.imageHost}companyLogos/moffitt-cancer-center-logo.png`,
     dateStarted: "Feb 2016",
     dateEnded: "Dec 2017",
@@ -123,10 +125,16 @@ export const WorkExperienceItems: IWorkExperienceItem[] = [
 
 export const PortfolioItems: IPortfolioItem[] = [
   {
+    title: "This website",
+    description:
+    "This website is open source and a link to the github repo is provided below.",
+    url: "https://github.com/michaelthegreat/portfolioSite",
+    skills: ["Angular", "graphql", "AWS serverless application development"]
+  },
+  {
     title: "Personalized Views for data grids",
     description:
       "The recording shows personalized views for data grids and an export. I worked full stack on these features.",
-    url: "https://www.jabil.com/capabilities/supply-chain/procurement-services.html",
     image: `${environment.endpoints.imageHost}QN3.gif`,
     skills: ["Angular", "ag grid", "DynamoDb", "javascript / typescript", "AWS Lambda"]
   },
@@ -134,15 +142,13 @@ export const PortfolioItems: IPortfolioItem[] = [
     title: "Searchable Data grid UI with column filters and export",
     description:
       "The recording shows a searchable data grid with column filters and an export.  This app supported data exports up to 1 million records (which is the maximum file size for CSV files)",
-    url: "https://www.jabil.com/capabilities/supply-chain/procurement-services.html",
     skills: ["Angular", "ag grid", "PostgreSQL", "javascript / typescript",  "AWS Lambda"],
     image: `${environment.endpoints.imageHost}PIP3.gif`,
   },
   {
     title: "SkyMassage",
     description:
-      "A website made for a Miami based massage company that allows customers to order a massage online. It sends a text to the masseuse and an email to the customer with the order details.",
-    url: "http://skymassage.org",
+      "A website created and hosted for a Miami based massage therapist that allows customers to order a massage online. It sends a text to the masseuse and an email to the customer with the order details. The massage therapist has since changed careers but I saved a recording of the site.",
     image: `${environment.endpoints.imageHost}skymassage.gif`,
     skills: ["Angular","DynamoDb", "javascript / typescript", "AWS Simple Email Service"]
   },
@@ -168,7 +174,7 @@ export const PortfolioItems: IPortfolioItem[] = [
     title: "Lucky Fish",
     description:
       "A fun, challenging game involving a flying goldfish and rockets",
-    url: "https://play.google.com/store/apps/details?id=com.people.ME",
+    url: "https://github.com/rogemilton/appmadejanuary2014",
     image: `${environment.endpoints.imageHost}luckyFish.gif`,
     skills: ["C#","Microsoft Visual Studio", "Unity"]
   },

@@ -11,7 +11,7 @@ export interface IWorkExperienceItem {
  export interface IPortfolioItem {
     title: string;
     description: string;
-    image:string;
-    url: string;
+    image?:string;
+    url?: string;
     skills: string[];
   }

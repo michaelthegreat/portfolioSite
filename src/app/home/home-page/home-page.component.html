@@ -1,13 +1,21 @@
-<p>
-  I am an experienced, Florida based software developer that specializes in
-  building full stack web applications. I am currently seeking a full time
-  position.
-</p>
-<h2>Work Experience</h2>
+<div class="home-page">
+  <mat-card>
 
-<mat-card *ngFor="let workExperienceItem of workItems" class="example-card">
+  <p>
+    I am an experienced, Florida based software developer that specializes in
+    building full stack web applications in the cloud. I am <a href="https://https://www.credly.com/badges/e319c5a8-f615-4727-8987-91698b315feb?source=linked_in_profile" target="blank">certified</a> to architect
+    highly available, scalable and fault tolerant web applications in the AWS cloud
+    and I have the experience to back up this claim. I am currently seeking a full time
+    position. 
+  </p>
+  <h2> Work Experience</h2>
+
+  <mat-card *ngFor="let workExperienceItem of workItems" class="example-card">
     <mat-card-header>
-      <mat-card-title>{{workExperienceItem.companyName}} <p>{{workExperienceItem.position}}</p></mat-card-title>
+      <mat-card-title
+        >{{ workExperienceItem.companyName }}
+        <p>{{ workExperienceItem.position }}</p></mat-card-title
+      >
     </mat-card-header>
     <!-- <img
       mat-card-image
@@ -16,18 +24,22 @@
     /> -->
     <mat-card-content>
       <p>
-          {{workExperienceItem.description}}
+        {{ workExperienceItem.description }}
       </p>
-      <p>Skills: <span *ngFor="let li of workExperienceItem.skills"> {{li}},</span></p>
+      <p>
+        Skills:
+        <span *ngFor="let li of workExperienceItem.skills"> {{ li }},</span>
+      </p>
     </mat-card-content>
   </mat-card>
   <h2>Gallery of stuff I worked on</h2>
 
-<mat-card *ngFor="let portfolioItem of portfolioItems" class="example-card">
+  <mat-card *ngFor="let portfolioItem of portfolioItems" class="example-card">
     <mat-card-header>
       <mat-card-title>{{ portfolioItem.title }}</mat-card-title>
     </mat-card-header>
     <img
+      *ngIf="portfolioItem.image"
       mat-card-image
       [lazyLoad]="portfolioItem.image"
       alt="Gif Recording"
@@ -36,9 +48,14 @@
       <p>
         {{ portfolioItem.description }}
       </p>
-      <p>Skills: <span *ngFor="let li of portfolioItem.skills"> {{li}},</span></p>
+      <p>
+        Skills: <span *ngFor="let li of portfolioItem.skills"> {{ li }},</span>
+      </p>
+      <a *ngIf="portfolioItem.url" href="{{ portfolioItem.url }}" target="blank"
+        >Link</a
+      >
     </mat-card-content>
   </mat-card>
-  
+</mat-card>
 
-
+</div>
