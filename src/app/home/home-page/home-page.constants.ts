@@ -3,6 +3,29 @@ import { environment } from '@environment';
 
 export const WorkExperienceItems: IWorkExperienceItem[] = [
   {
+    companyName: "Roadrunner Recycling",
+    position: "Senior Software Engineer",
+    description: `
+      Worked on an internal facing web application to help Roadrunner recycling manage recycling and waste pick up services. Worked on bugs, features and enhancements. Also worked as a project lead on a dashboard to allow people to get an aggregated view of services; filter by, export and edit the services. 
+    `,
+    image: `${environment.endpoints.imageHost}companyLogos/nbcu-logo.jpg`,
+    dateStarted: "May 2022",
+    dateEnded: "Present",
+    skills: [
+      "React",
+      "Ruby on Rails",
+      "Postgres SQL",
+      "Heroku",
+      "Amazon Web Services (AWS)",
+      "Tailwind CSS",
+      "Storybook",
+      "GraphQL + Postgraphile",
+      "It leadership",
+      "Python",
+      "Datadog (cloud monitoring)"
+    ],
+  },
+  {
     companyName: "Jabil",
     position: "Programming Analyst",
     description: `Worked on the Digital Transformation Services team at Jabil, a contract manufacturing company. Developed for and supported
@@ -15,7 +38,7 @@ export const WorkExperienceItems: IWorkExperienceItem[] = [
           `,
     image: `${environment.endpoints.imageHost}companyLogos/nbcu-logo.jpg`,
     dateStarted: "Feb 2019",
-    dateEnded: "Present",
+    dateEnded: "May 2022",
     skills: [
       "Angular",
       "Amazon Web Services (AWS)",
