@@ -6,7 +6,9 @@ export const WorkExperienceItems: IWorkExperienceItem[] = [
     companyName: "Roadrunner Recycling",
     position: "Senior Software Engineer",
     description: `
-      Worked on an internal facing web application to help Roadrunner recycling manage recycling and waste pick up services. Worked on bugs, features and enhancements. Also worked as a project lead on a dashboard to allow people to get an aggregated view of services; filter by, export and edit the services. 
+      Worked on an internal facing web application to help Roadrunner recycling manage recycling and waste pick up services. Worked on bugs, features and enhancements. Also worked as a project lead on a dashboard to allow people to get an aggregated view of services; filter by, export and edit the services.
+      Installed a design system library to the codebase that helped with consistency and speed of development.
+      Introduced automatic linting to the codebase and worked on improvements to the developer experience.
     `,
     image: `${environment.endpoints.imageHost}companyLogos/nbcu-logo.jpg`,
     dateStarted: "May 2022",
@@ -20,7 +22,7 @@ export const WorkExperienceItems: IWorkExperienceItem[] = [
       "Tailwind CSS",
       "Storybook",
       "GraphQL + Postgraphile",
-      "It leadership",
+      "Project management",
       "Python",
       "Datadog (cloud monitoring)"
     ],
