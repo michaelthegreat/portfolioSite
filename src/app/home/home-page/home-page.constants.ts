@@ -157,6 +157,13 @@ export const PortfolioItems: IPortfolioItem[] = [
     skills: ["Angular", "graphql", "AWS serverless application development"]
   },
   {
+    title: "Wemerch.com",
+    description:
+      "A concept website to practice  making serverless websites on AWS. It is a lambda  running a graphql server on the backend and an angular app hosted in a s3 bucket on the frontend. Has separate dev and production pipelines and an admin portal written in react. Type 4111 1111 1111 111 with CVC 111 and zip code 11111 and any valid expiration date to test buy something.",
+    image: `${environment.endpoints.imageHost}wemerch.gif`,
+    skills: ["Angular", "ag grid", "react", "node.js", "Express / typescript", "AWS Lambda", "Serverless Framework", "AWS Simple Email Service", "PostgreSQL", "graphql"]
+  },
+  {
     title: "Personalized Views for data grids",
     description:
       "The recording shows personalized views for data grids and an export. I worked full stack on these features.",
