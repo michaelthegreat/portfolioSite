@@ -14,4 +14,14 @@ export class HomePageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  generateSkillString(skills: string[]): string {
+    let skillString = '';
+    skills.forEach((skill, index) => {
+      skillString += skill;
+      if (index !== skills.length - 1) {
+        skillString += ', ';
+      }
+    })
+    return skillString;
+  }
 }

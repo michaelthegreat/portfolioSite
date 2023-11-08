@@ -23,7 +23,7 @@
           </p>
           <p>
             Skills:
-            <span *ngFor="let li of workExperienceItem.skills"> {{ li }},</span>
+            <span> {{ generateSkillString(workExperienceItem.skills) }}</span>
           </p>
         </mat-card-content>
       </mat-card>
@@ -44,7 +44,7 @@
             {{ portfolioItem.description }}
           </p>
           <p>
-            Skills: <span *ngFor="let li of portfolioItem.skills"> {{ li }},</span>
+            Skills: <span>{{ generateSkillString(portfolioItem.skills) }}</span>
           </p>
           <a *ngIf="portfolioItem.url" href="{{ portfolioItem.url }}" target="blank"
             >Link</a
