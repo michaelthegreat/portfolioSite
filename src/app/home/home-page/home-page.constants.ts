@@ -206,7 +206,7 @@ export const PortfolioItems: IPortfolioItem[] = [
     title: "Lucky Fish",
     description:
       "A fun, challenging game involving a flying goldfish and rockets",
-    url: "https://github.com/rogemilton/appmadejanuary2014",
+    url: "https://play.google.com/store/apps/details?id=com.wemerch.luckyFish&pcampaignid=web_share",
     image: `${environment.endpoints.imageHost}luckyFish.gif`,
     skills: ["C#","Microsoft Visual Studio", "Unity"]
   },
