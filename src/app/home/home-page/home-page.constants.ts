@@ -156,26 +156,35 @@ export const PortfolioItems: IPortfolioItem[] = [
     url: "https://github.com/michaelthegreat/portfolioSite",
     skills: ["Angular", "graphql", "AWS serverless application development"]
   },
+  // {
+  //   title: "Personalized Views for data grids",
+  //   description:
+  //     "The recording shows personalized views for data grids and an export. I worked full stack on these features.",
+  //   image: `${environment.endpoints.imageHost}QN3.gif`,
+  //   skills: ["Angular", "ag grid", "DynamoDb", "javascript / typescript", "AWS Lambda"]
+  // },
   {
-    title: "Personalized Views for data grids",
+    title: "michaelsart.wemerch.com",
     description:
-      "The recording shows personalized views for data grids and an export. I worked full stack on these features.",
-    image: `${environment.endpoints.imageHost}QN3.gif`,
-    skills: ["Angular", "ag grid", "DynamoDb", "javascript / typescript", "AWS Lambda"]
-  },
-  {
-    title: "Wemerch.com",
-    description:
-      "A concept website to practice  making serverless websites on AWS. It is a lambda  running a graphql server on the backend and an angular app hosted in a s3 bucket on the frontend. Has separate dev and production pipelines and an admin portal written in react. Type 4111 1111 1111 111 with CVC 111 and zip code 11111 and any valid expiration date to test buy something.",
+      "An e-commerce website built to sell drawings and practice making serverless websites on AWS. The backend is a node.js graphql server, the user facing site is written in Angular and the admin portal is written in React. It has seamless integration with external services and third party APIs – the Square SDK. The terraform infrastructure is open source",
     image: `${environment.endpoints.imageHost}wemerch.gif`,
+    url: 'https://michaelsart.wemerch.com',
     skills: ["Angular", "ag grid", "react", "node.js", "Express / typescript", "AWS Lambda", "Serverless Framework", "AWS Simple Email Service", "PostgreSQL", "graphql"]
   },
+  // {
+  //   title: "Searchable Data grid UI with column filters and export",
+  //   description:
+  //     "The recording shows a searchable data grid with column filters and an export.  This app supported data exports up to 1 million records (which is the maximum file size for CSV files)",
+  //   skills: ["Angular", "ag grid", "PostgreSQL", "javascript / typescript",  "AWS Lambda"],
+  //   image: `${environment.endpoints.imageHost}PIP3.gif`,
+  // },
   {
-    title: "Searchable Data grid UI with column filters and export",
+    title: "Lucky Fish",
     description:
-      "The recording shows a searchable data grid with column filters and an export.  This app supported data exports up to 1 million records (which is the maximum file size for CSV files)",
-    skills: ["Angular", "ag grid", "PostgreSQL", "javascript / typescript",  "AWS Lambda"],
-    image: `${environment.endpoints.imageHost}PIP3.gif`,
+      "A fun, challenging game involving a flying goldfish and rockets",
+    url: "https://play.google.com/store/apps/details?id=com.wemerch.luckyFish&pcampaignid=web_share",
+    image: `${environment.endpoints.imageHost}luckyFish.gif`,
+    skills: ["C#","Microsoft Visual Studio", "Unity"]
   },
   {
     title: "SkyMassage",
@@ -184,15 +193,15 @@ export const PortfolioItems: IPortfolioItem[] = [
     image: `${environment.endpoints.imageHost}skymassage.gif`,
     skills: ["Angular","DynamoDb", "javascript / typescript", "AWS Simple Email Service"]
   },
-  {
-    title: "Baby Drum",
-    description:
-      "A very simple app for babies to play the drums on. It has no ads and no extra screens or configurations for babies to get lost in. ",
-    url: "https://play.google.com/store/apps/details?id=com.QuinteroLLC.babyDrum",
-    image: `${environment.endpoints.imageHost}babyDrum.gif`,
-    skills: ["C#","Microsoft Visual Studio", "Unity"]
+  // {
+  //   title: "Baby Drum",
+  //   description:
+  //     "A very simple app for babies to play the drums on. It has no ads and no extra screens or configurations for babies to get lost in. ",
+  //   url: "https://play.google.com/store/apps/details?id=com.QuinteroLLC.babyDrum",
+  //   image: `${environment.endpoints.imageHost}babyDrum.gif`,
+  //   skills: ["C#","Microsoft Visual Studio", "Unity"]
     
-  },
+  // },
   {
     title: "Leadership Spectrum",
     description:
@@ -202,12 +211,5 @@ export const PortfolioItems: IPortfolioItem[] = [
     skills: ["Perl","PhP", "MySQL", "HTML / CSS"]
     
   },
-  {
-    title: "Lucky Fish",
-    description:
-      "A fun, challenging game involving a flying goldfish and rockets",
-    url: "https://play.google.com/store/apps/details?id=com.wemerch.luckyFish&pcampaignid=web_share",
-    image: `${environment.endpoints.imageHost}luckyFish.gif`,
-    skills: ["C#","Microsoft Visual Studio", "Unity"]
-  },
+
 ]
