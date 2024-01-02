@@ -5,6 +5,7 @@
       <span>Michael Quintero's Resume</span>
       <span class="header__toolbar-spacer"></span>
   <div class="header__menu" mat-tab-nav-bar>
+    <a mat-button fragment="gallery" (click)="navigateToSection('home-page__gallery')">Gallery</a>
     <ng-container *ngFor="let link of navLinks">
       <a mat-button id="header-link_{{ link.path }}" [routerLink]="link.path">{{
         link.label
